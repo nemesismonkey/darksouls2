@@ -1,0 +1,183 @@
+.alpha-select {
+	width: 150px;
+	border: 1px solid #AFB1B2;
+	border-radius: 3px;
+	line-height: 24px;
+}
+.alpha-select-container {
+	position:relative;
+}
+.alpha-select-text {
+	background-color: #e5e5e5;
+	background-image: linear-gradient(#f7f7f7, #e5e5e5);
+	background-repeat: repeat-x;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #222;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+	position: relative;
+	height: 24px;
+	-moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.alpha-text {
+	display: block;
+	line-height: 24px;
+	margin-right: 24px;
+	margin-left: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.alpha-select-text:hover .alpha-arrow {
+	border-top: 6px solid #222;
+}
+.alpha-select-text:hover {
+	background-color: #e1e1e1;
+	background-image: linear-gradient(#f0f0f0, #e1e1e1);
+}
+
+.alpha-image {
+	float: left;
+	position: relative;
+	margin-right: 3px;
+}
+.alpha-image img {
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin: 2px 0px 0px 2px;
+}
+
+.alpha-arrow {
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 6px solid #424444;
+	bottom: 8px;
+	display: block;
+	height: 0;
+	right: 7px;
+	position: absolute;
+	width: 0;
+}
+
+.alpha-select-dropout {
+	min-width: 100%;
+	width: 225px;
+	position: absolute;
+	top:100%;
+	min-height:50px;
+	left:-1px;
+	border: 1px solid #AFB1B2;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	font-family: Arial;
+	font-size: 12px;
+	z-index: 90010;
+}
+.alpha-select-dropout.up {
+	bottom:100%;
+	top: auto;
+}
+.alpha-select-dropout.right {
+	left: auto;
+	right: -1px;
+}
+
+.alpha-search-container {
+	margin:2px;
+	position:relative;
+}
+.alpha-select-container .alpha-select-dropout {
+	display: none;
+}
+.alpha-select-container.active .alpha-select-dropout {
+	display: block;
+}
+.alpha-search-box {
+	background: url("sprite.png") no-repeat scroll 100% -22px, -moz-linear-gradient(center top , #EEEEEE 1%, #FFFFFF 15%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid #AAAAAA;
+	font-family: Arial;
+	margin: 0px;
+	border-radius: 3px;
+	height: 20px;
+	outline: 0 none;
+	padding: 0px 20px 0px 5px;
+	font-size:12px;
+	text-align: left;
+}
+.alpha-search-box  input {
+	border: none;
+	background: transparent;
+	outline: 0 none;
+	padding: 0px;
+	margin: 0px;
+	width:100%;
+	margin-top: 2px;
+	display: block;
+	font-size: 12px;
+}
+
+.alpha-results-box {
+	margin: 2px 2px 2px 0;
+	max-height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding: 0 0 0 2px;
+	position: relative;
+	font-family: Arial;
+	font-size: 12px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.alpha-results-box > div {
+	margin: 2px 4px 2px 2px;
+	padding: 2px 0px;
+	border-bottom: dotted 1px #ddd;
+	min-height: 22px;
+	cursor: pointer;
+}
+.alpha-results-box > div:not(.alpha-results-group-title):hover {
+	background: #efefef;
+	border-bottom: dotted 1px #ddd;
+}
+
+.alpha-results-box > div img {
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin: 0px 2px 0px 0px;
+	vertical-align: bottom;
+	float: left;
+}
+.alpha-results-text {
+	margin-left: 2px;
+	line-height: 20px;
+	text-align: left;
+}
+.alpha-results-text.alpha-sub-text {
+	line-height: 15px;
+}
+.alpha-sub-text {
+	font-size: 11px;
+	color: #878787
+}
+.alpha-results-group-title {
+	text-align: left;
+	font-weight: bold;
+	cursor: default !important;
+	font-size: 110%;
+}
+.alpha-image img, .alpha-results-box > div img {
+	background-image: url("http://145.89.7.121/darksoulsii/project/imgs/icons/stat-icons.png");
+}

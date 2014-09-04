@@ -1,0 +1,1233 @@
+{
+	"rings" : [
+		{
+			"id" : 0,
+			"name" : "No Ring",
+			"ringId" : 0,
+			"weight" : 0,
+			"effects" : []
+		},{
+			"id" : 1,
+			"name" : "Life Ring",
+			"ringId" : 1,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases Hp by 5%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.05
+			}]
+		},{
+			"id" : 2,
+			"name" : "Life Ring+1",
+			"ringId" : 1,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases Hp by 7.5%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.075
+			}]
+		},{
+			"id" : 3,
+			"name" : "Life Ring+2",
+			"ringId" : 1,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases Hp by 12.5%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.125
+			}]
+		},{
+			"id" : 4,
+			"name" : "Chloranthy Ring",
+			"ringId" : 2,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases stamina recovery rate by 3.5%",
+				"alters": "stamGen",
+				"method": "mul",
+				"value" : 1.035
+			}]
+		},{
+			"id" : 5,
+			"name" : "Chloranthy Ring+1",
+			"ringId" : 2,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases stamina recovery rate by 3.5%",
+				"alters": "stamGen",
+				"method": "mul",
+				"value" : 1.035
+			}]
+		},{
+			"id" : 6,
+			"name" : "Chloranthy Ring+2",
+			"ringId" : 2,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases stamina recovery rate by 8%",
+				"alters": "stamGen",
+				"method": "mul",
+				"value" : 1.08
+			}]
+		},{
+			"id" : 7,
+			"name" : "Royal Soldier's Ring",
+			"ringId" : 3,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases equip load by 10%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.1
+			}]
+		},{
+			"id" : 8,
+			"name" : "Royal Soldier's Ring+1",
+			"ringId" : 3,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases equip load by 15%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.15
+			}]
+		},{
+			"id" : 9,
+			"name" : "Royal Soldier's Ring+2",
+			"ringId" : 3,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases equip load by 20%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.2
+			}]
+		},{
+			"id" : 10,
+			"name" : "First Dragon Ring",
+			"ringId" : 4,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases HP by 3%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.03
+			},{
+				"effect": "Increases stamina by 5%",
+				"alters": "stam",
+				"method": "mul",
+				"value" : 1.05
+			},{
+				"effect": "Increases equip load by 5%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.05
+			}]
+		},{
+			"id" : 11,
+			"name" : "Second Dragon Ring",
+			"ringId" : 4,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases HP by 5%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.05
+			},{
+				"effect": "Increases stamina by 10%",
+				"alters": "stam",
+				"method": "mul",
+				"value" : 1.1
+			},{
+				"effect": "Increases equip load by 10%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.1
+			}]
+		},{
+			"id" : 12,
+			"name" : "Third Dragon Ring",
+			"ringId" : 4,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases HP by 7.5%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.075
+			},{
+				"effect": "Increases stamina by 12.5%",
+				"alters": "stam",
+				"method": "mul",
+				"value" : 1.125
+			},{
+				"effect": "Increases equip load by 12.5%",
+				"alters": "eqp",
+				"method": "mul",
+				"value" : 1.125
+			}]
+		},{
+			"id" : 13,
+			"name" : "Ring of Steel Protection",
+			"ringId" : 5,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases physical defense by 50",
+				"alters": "phy",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 14,
+			"name" : "Ring of Steel Protection+1",
+			"ringId" : 5,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Increases physical defense by 75",
+				"alters": "phy",
+				"method": "add",
+				"value" : 75
+			}]
+		},{
+			"id" : 15,
+			"name" : "Ring of Steel Protection+2",
+			"ringId" : 5,
+			"weight" : 2,
+			"effects" : [{
+				"effect": "Increases physical defense by 100",
+				"alters": "phy",
+				"method": "add",
+				"value" : 100
+			}]
+		},{
+			"id" : 16,
+			"name" : "Spell Quartz Ring",
+			"ringId" : 6,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases magic defense by 50",
+				"alters": "mag",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 17,
+			"name" : "Spell Quartz Ring+1",
+			"ringId" : 6,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases magic defense by 80",
+				"alters": "mag",
+				"method": "add",
+				"value" : 80
+			}]
+		},{
+			"id" : 18,
+			"name" : "Spell Quartz Ring+2",
+			"ringId" : 6,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases magic defense by 100",
+				"alters": "mag",
+				"method": "add",
+				"value" : 100
+			}]
+		},{
+			"id" : 19,
+			"name" : "Flame Quartz Ring",
+			"ringId" : 7,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases fire defense by 50",
+				"alters": "fla",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 20,
+			"name" : "Flame Quartz Ring+1",
+			"ringId" : 7,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases fire defense by 80",
+				"alters": "fla",
+				"method": "add",
+				"value" : 80
+			}]
+		},{
+			"id" : 21,
+			"name" : "Flame Quartz Ring+2",
+			"ringId" : 7,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases fire defense by 100",
+				"alters": "fla",
+				"method": "add",
+				"value" : 100
+			}]
+		},{
+			"id" : 22,
+			"name" : "Thunder Quartz Ring",
+			"ringId" : 8,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases lightning defense by 50",
+				"alters": "lig",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 23,
+			"name" : "Thunder Quartz Ring+1",
+			"ringId" : 8,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases lightning defense by 80",
+				"alters": "lig",
+				"method": "add",
+				"value" : 80
+			}]
+		},{
+			"id" : 24,
+			"name" : "Thunder Quartz Ring+2",
+			"ringId" : 8,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases lightning defense by 100",
+				"alters": "lig",
+				"method": "add",
+				"value" : 100
+			}]
+		},{
+			"id" : 25,
+			"name" : "Dark Quartz Ring",
+			"ringId" : 9,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases dark defense by 50",
+				"alters": "dar",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 26,
+			"name" : "Dark Quartz Ring+1",
+			"ringId" : 9,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases dark defense by 80",
+				"alters": "dar",
+				"method": "add",
+				"value" : 80
+			}]
+		},{
+			"id" : 27,
+			"name" : "Dark Quartz Ring+2",
+			"ringId" : 9,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases dark defense by 100",
+				"alters": "dar",
+				"method": "add",
+				"value" : 100
+			}]
+		},{
+			"id" : 28,
+			"name" : "Poisonbite Ring",
+			"ringId" : 10,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases poison resistance by 150",
+				"alters": "poison",
+				"method": "add",
+				"value" : 150
+			}]
+		},{
+			"id" : 29,
+			"name" : "Bloodbite Ring",
+			"ringId" : 11,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases bleed resistance by 150",
+				"alters": "bleed",
+				"method": "add",
+				"value" : 150
+			}]
+		},{
+			"id" : 30,
+			"name" : "Cursebite Ring",
+			"ringId" : 12,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases curse resistance by 400",
+				"alters": "curse",
+				"method": "add",
+				"value" : 400
+			}]
+		},{
+			"id" : 31,
+			"name" : "Bracing Knuckle Ring",
+			"ringId" : 13,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Reduce weapon degradation by 20%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce armor degradation by 20%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce ring degradation by 20%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 32,
+			"name" : "Bracing Knuckle Ring+1",
+			"ringId" : 13,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Reduce weapon degradation by 35%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce armor degradation by 25%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce ring degradation by 25%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 33,
+			"name" : "Bracing Knuckle Ring+2",
+			"ringId" : 13,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Reduce weapon degradation by 50%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce armor degradation by 45%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			},{
+				"effect": "Reduce ring degradation by 45%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 34,
+			"name" : "Ash Knuckle Ring+2",
+			"ringId" : 14,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases petrification resistance by 400",
+				"alters": "petrify",
+				"method": "add",
+				"value" : 400
+			}]
+		},{
+			"id" : 35,
+			"name" : "Dispelling Ring",
+			"ringId" : 15,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases magic defense by 60",
+				"alters": "mag",
+				"method": "add",
+				"value" : 60
+			},{
+				"effect": "Increases lighting defense by 60",
+				"alters": "lig",
+				"method": "add",
+				"value" : 60
+			},{
+				"effect": "Increases fire defense by 60",
+				"alters": "fla",
+				"method": "add",
+				"value" : 60
+			},{
+				"effect": "Increases dark defense by 60",
+				"alters": "dar",
+				"method": "add",
+				"value" : 60
+			}]
+		},{
+			"id" : 36,
+			"name" : "Ring of Resistance",
+			"ringId" : 16,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases poison resistance by 120",
+				"alters": "poison",
+				"method": "add",
+				"value" : 120
+			},{
+				"effect": "Increases bleed resistance by 120",
+				"alters": "bleed",
+				"method": "add",
+				"value" : 120
+			},{
+				"effect": "Increases curse resistance by 120",
+				"alters": "curse",
+				"method": "add",
+				"value" : 120
+			},{
+				"effect": "Increases petrify resistance by 120",
+				"alters": "petrify",
+				"method": "add",
+				"value" : 120
+			}]
+		},{
+			"id" : 37,
+			"name" : "Ring of Blades",
+			"ringId" : 17,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases Physical attack by 20",
+				"alters": "atk",
+				"method": "add",
+				"value" : 20
+			}]
+		},{
+			"id" : 38,
+			"name" : "Ring of Blades+1",
+			"ringId" : 17,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Increases Physical attack by 35",
+				"alters": "atk",
+				"method": "add",
+				"value" : 35
+			}]
+		},{
+			"id" : 39,
+			"name" : "Ring of Blades+2",
+			"ringId" : 17,
+			"weight" : 2,
+			"effects" : [{
+				"effect": "Increases Physical attack by 50",
+				"alters": "atk",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 40,
+			"name" : "Ring of Knowledge",
+			"ringId" : 18,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases intelligence by 5",
+				"alters": "nnt",
+				"method": "add",
+				"value" : 5
+			}]
+		},{
+			"id" : 41,
+			"name" : "Ring of Prayer",
+			"ringId" : 19,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases faith by 5",
+				"alters": "fai",
+				"method": "add",
+				"value" : 5
+			}]
+		},{
+			"id" : 42,
+			"name" : "Stone Ring",
+			"ringId" : 20,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Deal additional 10 damage to poise",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 43,
+			"name" : "Red Tearstone Ring",
+			"ringId" : 21,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Boosts attack by 20% when HP is below 30%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 44,
+			"name" : "Blue Tearstone Ring",
+			"ringId" : 22,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Boosts defense by 35% when HP is below 30%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 45,
+			"name" : "Ring of Giants",
+			"ringId" : 23,
+			"weight" : 2,
+			"effects" : [{
+				"effect": "Increases poise by 10",
+				"alters": "poise",
+				"method": "add",
+				"value" : 10
+			}]
+		},{
+			"id" : 46,
+			"name" : "Ring of Giants+1",
+			"ringId" : 23,
+			"weight" : 3,
+			"effects" : [{
+				"effect": "Increases poise by 20",
+				"alters": "poise",
+				"method": "add",
+				"value" : 20
+			}]
+		},{
+			"id" : 47,
+			"name" : "Ring of Giants+2",
+			"ringId" : 23,
+			"weight" : 5,
+			"effects" : [{
+				"effect": "Increases poise by 30",
+				"alters": "poise",
+				"method": "add",
+				"value" : 30
+			}]
+		},{
+			"id" : 48,
+			"name" : "Old Leo Ring",
+			"ringId" : 24,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Strengthens thrust weapon counter attacks by 12.5%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 49,
+			"name" : "Ring of Soul Protection",
+			"ringId" : 25,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Do not turn Hollow or lose Souls upon death, immune to petrification. Breaks when activated.",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 50,
+			"name" : "Ring of Life Protection",
+			"ringId" : 26,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Do not turn Hollow or lose Souls upon death. Will not prevent death by petrification. Breaks when activated.",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 51,
+			"name" : "Lingering Dragoncrest Ring",
+			"ringId" : 27,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Extends length of spell effects by 15%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 52,
+			"name" : "Lingering Dragoncrest Ring+1",
+			"ringId" : 27,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Extends length of spell effects by 25%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 53,
+			"name" : "Lingering Dragoncrest Ring+2",
+			"ringId" : 27,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Extends length of spell effects by 35%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 54,
+			"name" : "Clear Bluestone Ring",
+			"ringId" : 28,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Shortens spell casting time by 20%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 55,
+			"name" : "Clear Bluestone Ring+1",
+			"ringId" : 28,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Shortens spell casting time by 35%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 56,
+			"name" : "Clear Bluestone Ring+2",
+			"ringId" : 28,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Shortens spell casting time by 55%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 57,
+			"name" : "Northern Ritual Band",
+			"ringId" : 29,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Increases spell uses by 10%",
+				"alters": "spellUses",
+				"method": "mul",
+				"value" : 1.1
+			},{
+				"effect": "Reduces HP by 20%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 0.8
+			}]
+		},{
+			"id" : 58,
+			"name" : "Northern Ritual Band+1",
+			"ringId" : 29,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Increases spell uses by 20%",
+				"alters": "spellUses",
+				"method": "mul",
+				"value" : 1.2
+			},{
+				"effect": "Reduces HP by 35%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 0.65
+			}]
+		},{
+			"id" : 59,
+			"name" : "Northern Ritual Band+2",
+			"ringId" : 29,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases spell uses by 30%",
+				"alters": "spellUses",
+				"method": "mul",
+				"value" : 1.3
+			},{
+				"effect": "Reduces HP by 50%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 0.5
+			}]
+		},{
+			"id" : 60,
+			"name" : "Southern Ritual Band",
+			"ringId" : 30,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases Attunement slots by 1",
+				"alters": "slots",
+				"method": "add",
+				"value" : 1
+			}]
+		},{
+			"id" : 61,
+			"name" : "Southern Ritual Band+1",
+			"ringId" : 30,
+			"weight" : 1.2,
+			"effects" : [{
+				"effect": "Increases Attunement slots by 2",
+				"alters": "slots",
+				"method": "add",
+				"value" : 2
+			}]
+		},{
+			"id" : 62,
+			"name" : "Southern Ritual Band+2",
+			"ringId" : 30,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Increases Attunement slots by 3",
+				"alters": "slots",
+				"method": "add",
+				"value" : 3
+			}]
+		},{
+			"id" : 63,
+			"name" : "Covetous Gold Serpent Ring",
+			"ringId" : 31,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Increases item discovery by 50%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 64,
+			"name" : "Covetous Gold Serpent Ring+1",
+			"ringId" : 31,
+			"weight" : 1.2,
+			"effects" : [{
+				"effect": "Increases item discovery by 75%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 65,
+			"name" : "Covetous Gold Serpent Ring+2",
+			"ringId" : 31,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Increases item discovery by 100%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 66,
+			"name" : "Covetous Silver Serpent Ring",
+			"ringId" : 32,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Fallen foes yield 10% more souls",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 67,
+			"name" : "Covetous Silver Serpent Ring+1",
+			"ringId" : 32,
+			"weight" : 1.2,
+			"effects" : [{
+				"effect": "Fallen foes yield 20% more souls",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 68,
+			"name" : "Covetous Silver Serpent Ring+2",
+			"ringId" : 32,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Fallen foes yield 30% more souls",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 69,
+			"name" : "Ring of the Evil Eye",
+			"ringId" : 33,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Absorb 30 HP from each defeated foe",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 70,
+			"name" : "Ring of the Evil Eye+1",
+			"ringId" : 33,
+			"weight" : 1.2,
+			"effects" : [{
+				"effect": "Absorb 50 HP from each defeated foe",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 71,
+			"name" : "Ring of the Evil Eye+2",
+			"ringId" : 33,
+			"weight" : 1.5,
+			"effects" : [{
+				"effect": "Absorb 80 HP from each defeated foe",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 72,
+			"name" : "Ring of Restoration",
+			"ringId" : 34,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Restores 2 HP every second",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 73,
+			"name" : "Ring of Binding",
+			"ringId" : 35,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Limits HP reduction when Hollowing by 25%, and stops HP reduction at 80% of max instead of 50%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 74,
+			"name" : "Silvercat Ring",
+			"ringId" : 36,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Reduces damage from falling",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 75,
+			"name" : "Redeye Ring",
+			"ringId" : 37,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Easier to be detected by enemies and draws their attention",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 76,
+			"name" : "Gower's Ring of Protection",
+			"ringId" : 38,
+			"weight" : 10,
+			"effects" : [{
+				"effect": "Reduces all damage taken from behind",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 77,
+			"name" : "Name-engraved Ring",
+			"ringId" : 39,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Easier to connect to players who chose same God",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 78,
+			"name" : "Slumbering Dragoncrest Ring",
+			"ringId" : 40,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Walking and Running produces no sound",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 79,
+			"name" : "Hawk Ring",
+			"ringId" : 41,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Extends the range of arrows by 7.55%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 80,
+			"name" : "Old Sun Ring",
+			"ringId" : 42,
+			"weight" : 3,
+			"effects" : [{
+				"effect": "Has a 10-30% of causing an explosion once it reaches the damage threshold",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 81,
+			"name" : "Illusory Ring of a Conqueror",
+			"ringId" : 43,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Left hand weapon becomes invisible",
+				"alters": "leftHandVis",
+				"method": "spec",
+				"value" : 1
+			}]
+		},{
+			"id" : 82,
+			"name" : "Illusory Ring of the Exalted",
+			"ringId" : 44,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Right hand weapon becomes invisible",
+				"alters": "rightHandVis",
+				"method": "spec",
+				"value" : 1
+			}]
+		},{
+			"id" : 83,
+			"name" : "Ring of the Dead",
+			"ringId" : 45,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Keep human appearance even when Hollow",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 84,
+			"name" : "Ring of Thorns",
+			"ringId" : 46,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Has a 30% chance of counter-attacking when damage is taken",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 85,
+			"name" : "Ring of Thorns+1",
+			"ringId" : 46,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Has a 50% chance of counter-attacking when damage is taken",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 86,
+			"name" : "Ring of Thorns+2",
+			"ringId" : 46,
+			"weight" : 0.8,
+			"effects" : [{
+				"effect": "Has a 70% chance of counter-attacking when damage is taken",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 87,
+			"name" : "Delicate String",
+			"ringId" : 47,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Increases chance of being invaded",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 88,
+			"name" : "White Ring",
+			"ringId" : 48,
+			"weight" : 1,
+			"effects" : [{
+				"effect": "Take the appearance of a white phantom",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 89,
+			"name" : "Ring of Whispers",
+			"ringId" : 49,
+			"weight" : 0.5,
+			"effects" : [{
+				"effect": "Causes a sound when you're near enemies and can be used to talk to Manscorpion Tark",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 90,
+			"name" : "King's Ring",
+			"ringId" : 50,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Opens the King's Gates and increases fire element damage by 5 points",
+				"alters": "firatk",
+				"method": "add",
+				"value" : 5
+			}]
+		},{
+			"id" : 91,
+			"name" : "Blue Seal",
+			"ringId" : 51,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring for apostles of Blue. Increases max HP by 3%",
+				"alters": "hp",
+				"method": "mul",
+				"value" : 1.03
+			}]
+		},{
+			"id" : 92,
+			"name" : "Guardian's Seal",
+			"ringId" : 52,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Automatically summons you to other worlds",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 93,
+			"name" : "Crest of Blood",
+			"ringId" : 53,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring given to those who seek blood. Adds to bleed damage",
+				"alters": "bleedatk",
+				"method": "spec",
+				"value" : "bloodTypeSpec"
+			}]
+		},{
+			"id" : 94,
+			"name" : "Crest of the Rat",
+			"ringId" : 54,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Ring for the Rat King covenant. Adds 50 to poison attack",
+				"alters": "poisonatk",
+				"method": "add",
+				"value" : 50
+			}]
+		},{
+			"id" : 95,
+			"name" : "Bell Keeper's Seal",
+			"ringId" : 55,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Ring for the Bell Keeper covenant",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 96,
+			"name" : "Sun Seal",
+			"ringId" : 56,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring for Heirs of the Sun. Increases the strength of Miracles by 5%",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 97,
+			"name" : "Vanquisher's Seal",
+			"ringId" : 57,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring for Champions. Increases bare handed attack power",
+				"alters": "fistatk",
+				"method": "spec",
+				"value" : 0
+			}]
+		},{
+			"id" : 98,
+			"name" : "Ancient Dragon Seal",
+			"ringId" : 58,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring for would-be dragons. Estus Flask use restores 50 HP more",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		},{
+			"id" : 99,
+			"name" : "Abyss Seal",
+			"ringId" : 59,
+			"weight" : 0.2,
+			"effects" : [{
+				"effect": "Covenant ring for Pilgrims of Dark. Also increases the power of Hexes by 20% at the cost of 30 HP per cast.",
+				"alters": "none",
+				"method": "none",
+				"value" : 0
+			}]
+		}
+	],
+	
+	"spells" : [
+	    {
+		  "id":0,
+		  "type":"first",
+		  "name":"No Spell",
+		  "sname":"NoSpell",
+		  "cost":0,
+		  "cov":0,
+		  "requirement":0
+	   },{
+		  "id":1,
+		  "type":0,
+		  "name":"Soul Arrow",
+		  "sname":"SoulArrow",
+		  "cost":1,
+		  "cov":0,
+		  "requirement":10
+	   }
+	],
+	
+	"items" : [
+		{
+			"id":0,
+			"name":"No Item",
+			"sname":"None"
+		}
+	]
+}

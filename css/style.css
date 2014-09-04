@@ -1,0 +1,2461 @@
+/* HTML5 ✰ Boilerplate
+ * ==|== normalize ==========================================================
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 14px; line-height: 1.231; }
+body, button, input, select, textarea { font-family: Questrial, Arial, sans-serif; color: #222; }
+
+::-moz-selection { background: rgba(59, 62, 65, 0.3); text-shadow: none; }
+::selection { background: rgba(59, 62, 65, 0.3); color: #fff; text-shadow: none; }
+
+a { color: #e11a27; }
+a:visited { color: #e11a27; }
+a:hover { color: #e11a27; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 6px 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+p { margin: 15px 0; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;outline: none; }
+button, input { line-height: normal; *overflow: visible; }
+table button, table input { *overflow: auto; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+input:focus, select:focus, textarea:focus, button:focus { outline: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+code:before { content: "Code:"; left: 0; position: absolute; top: -1.35em; }
+code {
+    background-color: #EEEEEE;
+    border: solid 1px #AAAAAA;
+    display: block;
+    margin-top: 1.5em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.25em;
+    position: relative;
+    white-space: pre;
+}
+.ie6 code, .ie7 code { margin-top: 0; }
+code:before, code { display: block;text-align: left; }
+blockquote {
+    background-clip: border-box;
+    background-color: #FFF6C7;
+    border: solid 1px #AAAAAA;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: 0.25em;
+    position: relative;
+}
+blockquote cite {
+    border-bottom-color: #AAAAAA;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+
+/* ==|== media queries ====================================================== */
+
+
+/* ============================================ */
+/* This file has a mobile-to-desktop breakpoint */
+/* ============================================ */
+@media screen and (max-width: 400px) {
+  @-ms-viewport {
+    width: 320px;
+}
+}
+@media screen {
+
+  .clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .grid-container:before, .clearfix:before,
+  .grid-container:after,
+  .clearfix:after,
+  .mobile-grid-container:before, 
+  .mobile-grid-container:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .grid-container:after,.mobile-grid-container:after, .clearfix:after {
+    clear: both;
+  }
+
+  .grid-container, .clearfix {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  .grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .grid-5, .mobile-grid-5, .grid-10, .mobile-grid-10, .grid-15, .mobile-grid-15, .grid-20, .mobile-grid-20, .grid-25, .mobile-grid-25, .grid-30, .mobile-grid-30, .grid-35, .mobile-grid-35, .grid-40, .mobile-grid-40, .grid-45, .mobile-grid-45, .grid-50, .mobile-grid-50, .grid-55, .mobile-grid-55, .grid-60, .mobile-grid-60, .grid-65, .mobile-grid-65, .grid-70, .mobile-grid-70, .grid-75, .mobile-grid-75, .grid-80, .mobile-grid-80, .grid-85, .mobile-grid-85, .grid-90, .mobile-grid-90, .grid-95, .mobile-grid-95, .grid-100, .mobile-grid-100, .grid-33, .mobile-grid-33, .grid-66, .mobile-grid-66 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* <IE7> */
+    *padding-left: 0;
+    *padding-right: 0;
+    /* </IE7> */
+  }
+  .grid-5 > *, .mobile-grid-5 > *, .grid-10 > *, .mobile-grid-10 > *, .grid-15 > *, .mobile-grid-15 > *, .grid-20 > *, .mobile-grid-20 > *, .grid-25 > *, .mobile-grid-25 > *, .grid-30 > *, .mobile-grid-30 > *, .grid-35 > *, .mobile-grid-35 > *, .grid-40 > *, .mobile-grid-40 > *, .grid-45 > *, .mobile-grid-45 > *, .grid-50 > *, .mobile-grid-50 > *, .grid-55 > *, .mobile-grid-55 > *, .grid-60 > *, .mobile-grid-60 > *, .grid-65 > *, .mobile-grid-65 > *, .grid-70 > *, .mobile-grid-70 > *, .grid-75 > *, .mobile-grid-75 > *, .grid-80 > *, .mobile-grid-80 > *, .grid-85 > *, .mobile-grid-85 > *, .grid-90 > *, .mobile-grid-90 > *, .grid-95 > *, .mobile-grid-95 > *, .grid-100 > *, .mobile-grid-100 > *, .grid-33 > *, .mobile-grid-33 > *, .grid-66 > *, .mobile-grid-66 > * {
+    /* <IE7> */
+    *margin-left: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    *margin-right: expression((!this.className.match(/grid-[1-9]/) && this.currentStyle.display === "block" && this.currentStyle.width === "auto") && "10px");
+    /* </IE7> */
+  }
+
+  .grid-parent {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+	
+  .mobile-grid-100 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  .mobile-push-5,
+  .mobile-pull-5, .mobile-push-10,
+  .mobile-pull-10, .mobile-push-15,
+  .mobile-pull-15, .mobile-push-20,
+  .mobile-pull-20, .mobile-push-25,
+  .mobile-pull-25, .mobile-push-30,
+  .mobile-pull-30, .mobile-push-35,
+  .mobile-pull-35, .mobile-push-40,
+  .mobile-pull-40, .mobile-push-45,
+  .mobile-pull-45, .mobile-push-50,
+  .mobile-pull-50, .mobile-push-55,
+  .mobile-pull-55, .mobile-push-60,
+  .mobile-pull-60, .mobile-push-65,
+  .mobile-pull-65, .mobile-push-70,
+  .mobile-pull-70, .mobile-push-75,
+  .mobile-pull-75, .mobile-push-80,
+  .mobile-pull-80, .mobile-push-85,
+  .mobile-pull-85, .mobile-push-90,
+  .mobile-pull-90, .mobile-push-95,
+  .mobile-pull-95, .mobile-push-33,
+  .mobile-pull-33, .mobile-push-66,
+  .mobile-pull-66 {
+    position: relative;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .mobile-grid-5 {
+    float: left;
+    width: 5%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-5 {
+    margin-left: 5%;
+  }
+
+  .mobile-suffix-5 {
+    margin-right: 5%;
+  }
+
+  .mobile-push-5 {
+    left: 5%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-5 {
+    left: -5%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-10 {
+    float: left;
+    width: 10%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-10 {
+    margin-left: 10%;
+  }
+
+  .mobile-suffix-10 {
+    margin-right: 10%;
+  }
+
+  .mobile-push-10 {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-10 {
+    left: -10%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-15 {
+    float: left;
+    width: 15%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-15 {
+    margin-left: 15%;
+  }
+
+  .mobile-suffix-15 {
+    margin-right: 15%;
+  }
+
+  .mobile-push-15 {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-15 {
+    left: -15%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-20 {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-20 {
+    margin-left: 20%;
+  }
+
+  .mobile-suffix-20 {
+    margin-right: 20%;
+  }
+
+  .mobile-push-20 {
+    left: 20%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-20 {
+    left: -20%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-25 {
+    float: left;
+    width: 25%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-25 {
+    margin-left: 25%;
+  }
+
+  .mobile-suffix-25 {
+    margin-right: 25%;
+  }
+
+  .mobile-push-25 {
+    left: 25%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-25 {
+    left: -25%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-30 {
+    float: left;
+    width: 30%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-30 {
+    margin-left: 30%;
+  }
+
+  .mobile-suffix-30 {
+    margin-right: 30%;
+  }
+
+  .mobile-push-30 {
+    left: 30%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-30 {
+    left: -30%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-35 {
+    float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-35 {
+    margin-left: 35%;
+  }
+
+  .mobile-suffix-35 {
+    margin-right: 35%;
+  }
+
+  .mobile-push-35 {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-35 {
+    left: -35%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-40 {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-40 {
+    margin-left: 40%;
+  }
+
+  .mobile-suffix-40 {
+    margin-right: 40%;
+  }
+
+  .mobile-push-40 {
+    left: 40%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-40 {
+    left: -40%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-45 {
+    float: left;
+    width: 45%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-45 {
+    margin-left: 45%;
+  }
+
+  .mobile-suffix-45 {
+    margin-right: 45%;
+  }
+
+  .mobile-push-45 {
+    left: 45%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-45 {
+    left: -45%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-50 {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-50 {
+    margin-left: 50%;
+  }
+
+  .mobile-suffix-50 {
+    margin-right: 50%;
+  }
+
+  .mobile-push-50 {
+    left: 50%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-50 {
+    left: -50%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-55 {
+    float: left;
+    width: 55%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-55 {
+    margin-left: 55%;
+  }
+
+  .mobile-suffix-55 {
+    margin-right: 55%;
+  }
+
+  .mobile-push-55 {
+    left: 55%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-55 {
+    left: -55%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-60 {
+    float: left;
+    width: 60%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-60 {
+    margin-left: 60%;
+  }
+
+  .mobile-suffix-60 {
+    margin-right: 60%;
+  }
+
+  .mobile-push-60 {
+    left: 60%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-60 {
+    left: -60%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-65 {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-65 {
+    margin-left: 65%;
+  }
+
+  .mobile-suffix-65 {
+    margin-right: 65%;
+  }
+
+  .mobile-push-65 {
+    left: 65%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-65 {
+    left: -65%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-70 {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-70 {
+    margin-left: 70%;
+  }
+
+  .mobile-suffix-70 {
+    margin-right: 70%;
+  }
+
+  .mobile-push-70 {
+    left: 70%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-70 {
+    left: -70%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-75 {
+    float: left;
+    width: 75%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-75 {
+    margin-left: 75%;
+  }
+
+  .mobile-suffix-75 {
+    margin-right: 75%;
+  }
+
+  .mobile-push-75 {
+    left: 75%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-75 {
+    left: -75%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-80 {
+    float: left;
+    width: 80%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-80 {
+    margin-left: 80%;
+  }
+
+  .mobile-suffix-80 {
+    margin-right: 80%;
+  }
+
+  .mobile-push-80 {
+    left: 80%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-80 {
+    left: -80%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-85 {
+    float: left;
+    width: 85%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-85 {
+    margin-left: 85%;
+  }
+
+  .mobile-suffix-85 {
+    margin-right: 85%;
+  }
+
+  .mobile-push-85 {
+    left: 85%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-85 {
+    left: -85%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-90 {
+    float: left;
+    width: 90%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-90 {
+    margin-left: 90%;
+  }
+
+  .mobile-suffix-90 {
+    margin-right: 90%;
+  }
+
+  .mobile-push-90 {
+    left: 90%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-90 {
+    left: -90%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-95 {
+    float: left;
+    width: 95%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-95 {
+    margin-left: 95%;
+  }
+
+  .mobile-suffix-95 {
+    margin-right: 95%;
+  }
+
+  .mobile-push-95 {
+    left: 95%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-95 {
+    left: -95%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-33 {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-33 {
+    margin-left: 33.33333%;
+  }
+
+  .mobile-suffix-33 {
+    margin-right: 33.33333%;
+  }
+
+  .mobile-push-33 {
+    left: 33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-33 {
+    left: -33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-66 {
+    float: left;
+    width: 66.66667%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-prefix-66 {
+    margin-left: 66.66667%;
+  }
+
+  .mobile-suffix-66 {
+    margin-right: 66.66667%;
+  }
+
+  .mobile-push-66 {
+    left: 66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-pull-66 {
+    left: -66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .mobile-grid-100 {
+    clear: both;
+    width: 100%;
+  }
+  
+}
+@media only screen and (min-width: 768px) {
+  .grid-100:before,
+  .grid-100:after {
+    content: ".";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .grid-100:after {
+    clear: both;
+  }
+
+  .grid-100 {
+    /* <IE7> */
+    *zoom: 1;
+    /* </IE7> */
+  }
+
+  .push-5,
+  .pull-5, .push-10,
+  .pull-10, .push-15,
+  .pull-15, .push-20,
+  .pull-20, .push-25,
+  .pull-25, .push-30,
+  .pull-30, .push-35,
+  .pull-35, .push-40,
+  .pull-40, .push-45,
+  .pull-45, .push-50,
+  .pull-50, .push-55,
+  .pull-55, .push-60,
+  .pull-60, .push-65,
+  .pull-65, .push-70,
+  .pull-70, .push-75,
+  .pull-75, .push-80,
+  .pull-80, .push-85,
+  .pull-85, .push-90,
+  .pull-90, .push-95,
+  .pull-95, .push-33,
+  .pull-33, .push-66,
+  .pull-66 {
+    position: relative;
+  }
+
+  .hide-on-desktop {
+    display: none !important;
+  }
+
+  .grid-5 {
+    float: left;
+    width: 5%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-5 {
+    margin-left: 5%;
+  }
+
+  .suffix-5 {
+    margin-right: 5%;
+  }
+
+  .push-5 {
+    left: 5%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-5 {
+    left: -5%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.05 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-10 {
+    float: left;
+    width: 10%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-10 {
+    margin-left: 10%;
+  }
+
+  .suffix-10 {
+    margin-right: 10%;
+  }
+
+  .push-10 {
+    left: 10%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-10 {
+    left: -10%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.1 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-15 {
+    float: left;
+    width: 15%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-15 {
+    margin-left: 15%;
+  }
+
+  .suffix-15 {
+    margin-right: 15%;
+  }
+
+  .push-15 {
+    left: 15%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-15 {
+    left: -15%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.15 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-20 {
+    float: left;
+    width: 20%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-20 {
+    margin-left: 20%;
+  }
+
+  .suffix-20 {
+    margin-right: 20%;
+  }
+
+  .push-20 {
+    left: 20%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-20 {
+    left: -20%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.2 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-25 {
+    float: left;
+    width: 25%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-25 {
+    margin-left: 25%;
+  }
+
+  .suffix-25 {
+    margin-right: 25%;
+  }
+
+  .push-25 {
+    left: 25%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-25 {
+    left: -25%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.25 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-30 {
+    float: left;
+    width: 30%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-30 {
+    margin-left: 30%;
+  }
+
+  .suffix-30 {
+    margin-right: 30%;
+  }
+
+  .push-30 {
+    left: 30%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-30 {
+    left: -30%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.3 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-35 {
+    float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-35 {
+    margin-left: 35%;
+  }
+
+  .suffix-35 {
+    margin-right: 35%;
+  }
+
+  .push-35 {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-35 {
+    left: -35%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-40 {
+    float: left;
+    width: 40%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-40 {
+    margin-left: 40%;
+  }
+
+  .suffix-40 {
+    margin-right: 40%;
+  }
+
+  .push-40 {
+    left: 40%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-40 {
+    left: -40%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.4 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-45 {
+    float: left;
+    width: 45%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-45 {
+    margin-left: 45%;
+  }
+
+  .suffix-45 {
+    margin-right: 45%;
+  }
+
+  .push-45 {
+    left: 45%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-45 {
+    left: -45%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.45 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-50 {
+    float: left;
+    width: 50%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-50 {
+    margin-left: 50%;
+  }
+
+  .suffix-50 {
+    margin-right: 50%;
+  }
+
+  .push-50 {
+    left: 50%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-50 {
+    left: -50%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-55 {
+    float: left;
+    width: 55%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-55 {
+    margin-left: 55%;
+  }
+
+  .suffix-55 {
+    margin-right: 55%;
+  }
+
+  .push-55 {
+    left: 55%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-55 {
+    left: -55%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.55 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-60 {
+    float: left;
+    width: 60%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-60 {
+    margin-left: 60%;
+  }
+
+  .suffix-60 {
+    margin-right: 60%;
+  }
+
+  .push-60 {
+    left: 60%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-60 {
+    left: -60%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.6 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-65 {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-65 {
+    margin-left: 65%;
+  }
+
+  .suffix-65 {
+    margin-right: 65%;
+  }
+
+  .push-65 {
+    left: 65%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-65 {
+    left: -65%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-70 {
+    float: left;
+    width: 70%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-70 {
+    margin-left: 70%;
+  }
+
+  .suffix-70 {
+    margin-right: 70%;
+  }
+
+  .push-70 {
+    left: 70%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-70 {
+    left: -70%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.7 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-75 {
+    float: left;
+    width: 75%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-75 {
+    margin-left: 75%;
+  }
+
+  .suffix-75 {
+    margin-right: 75%;
+  }
+
+  .push-75 {
+    left: 75%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-75 {
+    left: -75%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.75 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-80 {
+    float: left;
+    width: 80%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-80 {
+    margin-left: 80%;
+  }
+
+  .suffix-80 {
+    margin-right: 80%;
+  }
+
+  .push-80 {
+    left: 80%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-80 {
+    left: -80%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.8 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-85 {
+    float: left;
+    width: 85%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-85 {
+    margin-left: 85%;
+  }
+
+  .suffix-85 {
+    margin-right: 85%;
+  }
+
+  .push-85 {
+    left: 85%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-85 {
+    left: -85%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.85 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-90 {
+    float: left;
+    width: 90%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-90 {
+    margin-left: 90%;
+  }
+
+  .suffix-90 {
+    margin-right: 90%;
+  }
+
+  .push-90 {
+    left: 90%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-90 {
+    left: -90%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.9 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-95 {
+    float: left;
+    width: 95%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-95 {
+    margin-left: 95%;
+  }
+
+  .suffix-95 {
+    margin-right: 95%;
+  }
+
+  .push-95 {
+    left: 95%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-95 {
+    left: -95%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.95 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-33 {
+    float: left;
+    width: 33.33333%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-33 {
+    margin-left: 33.33333%;
+  }
+
+  .suffix-33 {
+    margin-right: 33.33333%;
+  }
+
+  .push-33 {
+    left: 33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-33 {
+    left: -33.33333%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.33333 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-66 {
+    float: left;
+    width: 66.66667%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .prefix-66 {
+    margin-left: 66.66667%;
+  }
+
+  .suffix-66 {
+    margin-right: 66.66667%;
+  }
+
+  .push-66 {
+    left: 66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .pull-66 {
+    left: -66.66667%;
+    /* <IE7> */
+    *left: expression(Math.floor(-0.66667 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+    /* </IE7> */
+  }
+
+  .grid-100 {
+    clear: both;
+    width: 100%;
+  }
+}
+
+
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+   
+body {
+	background: #0c0c0c url(../imgs/main_bg.png) repeat;
+	font-family: 'Roboto', sans-serif;
+	margin: 0px 0px 20px 0px;
+	font-size: 13px;
+}  
+a,a:link,a:visited,a:active { color: #7f6350; text-decoration: none; }
+a:hover{ color: #a28673; }
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+header { color: #f1f1f1; }
+#topBar {
+	background: #080809;
+	background: rgba(10,11,12,.5);
+	border-bottom: #080909 solid 1px;
+	height: 25px;
+	line-height:25px;
+	font-size: 11.5px;
+	letter-spacing: .2px;
+	font-weight: 300;
+}
+#logoBar {
+	background: #000000;
+	min-height: 120px;
+}
+#subBar {
+	background: #0a0a0a;
+	background: rgba(10,11,12,.5);
+	height: 25px;
+	border-bottom: #000000 solid 1px;
+	margin-bottom: 20px;
+	line-height:18px;
+	font-weight: 900;
+	font-size: 13px;
+}
+#logo {
+	width: 403px;
+	height: 80px;
+}
+.logo-c { line-height: 120px; }
+.info-box { font-size: 11px; }
+#subBar a {
+	margin-right: 20px;
+	text-transform: uppercase;
+}  
+#bestclass {
+	background: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    bottom: -15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 10px;
+    height: 16px;
+    line-height: 14px;
+    position: absolute;
+    right: 1px;
+    width: 148px;
+	display: none;
+	font-weight: bold;
+}
+#class-lvl {
+	margin-right: 10px;
+}
+#class-name {
+	margin-left: 10px;
+}
+#revert {
+	position: absolute;
+	top: -1px;
+	right: 0px;
+}
+#revert img {
+	background-position: -918px 0px;
+	cursor:pointer;
+	opacity: .3;
+}
+#revert img:hover {
+	opacity: 1;
+}
+.c-header {
+	background: #1a1a1a;
+	border-radius: 10px 10px 0 0;
+	min-height: 30px;
+}
+.c-body {
+	background: #d5d9dc url(../imgs/bg_sep.png) center top no-repeat;
+	min-height: 300px;
+	border-top: solid 2px #e8e8e8;border-bottom: solid 2px #e8e8e8
+}
+.c-spells {
+	background: #c7cacd;
+	border-bottom: solid 2px #e8e8e8;
+	border-top: solid 2px #c7cacd;
+	min-height: 40px;
+	line-height: 22px;
+	text-align:right;
+}
+.spells {
+	visibility: visible;
+	margin-left:0px;
+}
+.c-spells .grid-66 {
+	background:  url(../imgs/header-sprite.png) -135px -105px no-repeat;
+	padding: 0px;
+	margin-bottom: 3px;
+}
+.c-spells .grid-66 > div {
+	height: 30px;
+    line-height: 30px;
+}
+.c-spells > div > select {
+	width: 95%;
+	margin-left: 0px;
+}
+.c-items {
+	background: #d5d9dc;
+	min-height: 40px;
+	line-height: 40px;
+	
+}
+.c-items select{
+	margin-left: 0px;
+}
+.c-footer {
+	background: #c7cacd;
+	border-radius: 0 0 10px 10px;
+	min-height: 40px;
+	
+}
+.c-body .grid-33 {margin: 10px 0px;}
+
+   
+   
+.player-tab {
+	width: 116px;
+	float:left;
+	height: 30px;
+	background: transparent url(../imgs/header-sprite.png) no-repeat;
+	line-height: 30px;
+	position:relative;
+	font-size: 13px;
+	cursor:pointer;
+}
+.player-tab.base {
+	z-index: 100;
+	background-position: 0% -60px;
+	border-radius: 10px 0px 0px 0px;
+	color: #bfc9ce;
+}
+.player-tab.tab {
+	background-position: -2px -30px;
+	margin-left: -15px;
+	color: #646c71;
+}
+.player-tab.tab.t1{
+z-index: 99;
+}
+.player-tab.tab.t2{
+z-index: 98;
+}
+.player-tab.tab.t3{
+z-index: 97;
+}
+.player-tab.end {
+	background-position: -62px 0%;
+	margin-left: -15px;
+	width: 55px;
+}
+
+.player-tab.base:hover,.player-tab.base.active {
+	background-position: 0% -150px;
+}
+.player-tab.tab:hover,.player-tab.tab.active {
+	background-position: -2px -120px;
+}
+.player-tab.end:hover,.player-tab.end.active {
+	background-position: -62px -90px;
+}
+.player-tab.active {
+	cursor: default;
+}
+.player-tab.active:after{
+	content:" ";
+	display:block;
+	position:absolute;
+	bottom:-6px;
+	left:50%;
+	margin-left:-8px;
+	width: 0; 
+	height: 0; 
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #212323;
+}
+.player-tab.tab.active:after{
+	border-top: 6px solid #9da6aa;
+}
+.player-tab > div {
+	padding: 0px 0px 0px 10px;
+}
+.player-tab.tab > div {
+	padding: 0px 0px 0px 20px;
+}
+.player-icon {
+	float:left;
+	width: 20px;
+	height: 16px;
+	background: transparent url(../imgs/header-sprite.png) no-repeat;
+	margin: 7px 2px 0px 0px;
+}
+.player-icon.light {
+	background-position: -129px -16px;
+}
+.player-icon.dark {
+	background-position: -129px -32px;
+}
+.player-icon.add {
+	margin: 7px 0px 0px 10px;
+	background-position: -129px 0px;
+}
+
+.player-remove {
+	background-position: -129px -48px;
+	margin: 8px 15px 0px 0px;
+	float: right;
+	cursor:pointer;
+}
+.player-remove:hover{
+	background-position: -129px -61px;
+}
+
+.player-options {
+	margin-right: 10px;
+}
+/*
+.player-options > div {
+	min-width: 25px;
+	max-width: 80px;
+	height:34px;
+	margin:-2px 0px -3px 15px;
+	background: #212323;
+	float:right;
+	color: #bfc9ce;
+	font-size: 11px;
+	line-height: 16px;
+	cursor:pointer;
+	border-radius:2px;
+	border-top: solid 1px #D6D6D6;
+}*/
+
+.player-options > div {
+	padding: 0px 10px;
+	height: 20px;
+	margin: 4px 0px 0px 10px;
+	line-height: 19px;
+	width: auto;
+	-moz-user-select: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#EEEEEE, #DDDDDD);
+    background-repeat: repeat-x;
+    border: 1px solid #afb1b2;
+    border-radius: 3px;
+    color: #333333;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    vertical-align: middle;
+    white-space: nowrap;
+	float:right;
+	text-align: center;
+	
+}
+
+.player-is {
+	width:28px;
+	height: 28px;
+	float: left; clear: none;
+	background:  transparent url(../imgs/subbar-sprite.png) no-repeat;
+	margin:2px 0px 0px;
+	display: none;
+	
+}
+.player-is.armour{
+	background-position: 0px -29px;
+	margin:2px 5px 0px;
+}
+.player-is.finder{
+	background-position: 0px -58px;
+	margin:2px 5px 0px;
+}
+.stat-box {
+	height: 25px;
+	line-height: 25px;
+	position: relative;
+}
+.stat-box.tall {
+	height: 28px;
+	line-height: 28px;
+}
+.stat-box.taller {
+	height: 30px;
+	line-height: 28px;
+}
+.stat-box label {
+	font-weight: 400;
+}
+
+input.fixed,input.editable {
+	clear: none;
+	width: 38px;
+	background: #f9f9f9;
+	border: solid 1px #ccc;
+	padding: 2px;
+	text-align:center;
+	margin-top: 2px;
+	border-radius: 3px;
+	font-weight: 400;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+	
+.stat-box input.fixed, .stat-box input.editable{
+	margin-left: 6px;
+	float: right;
+}
+input.editable.big{width: 80%;}
+input.fixed.big{width: 75px;text-align:right;}
+input.fixed.bigger{width: 80%;text-align:center;color:#333;}
+input.fixed{color: #777;background: #ebebeb;}
+input.bold {
+	font-weight: 700;
+	color: #333;
+}
+select {
+	width:150px;
+	background: #f9f9f9;
+	border: solid 1px #ccc;
+	margin-left: 10px;
+	padding: 2px 5px;
+	margin-top: 2px;
+	border-radius: 3px;
+}
+.grid-33 .grid-33 {
+	margin: 5px 0px;
+	text-align: center;
+}
+#hand-2 {
+	height: 18px;
+	line-height: 18px;
+	margin:0px;
+	text-align: right;
+	float: right;
+	position: relative;
+	z-index: 5;
+}
+#hand-2 input{vertical-align: top; margin-top: 4px;}
+
+#slv{margin-right: 50px; }
+#link64 {
+	width: 580px;
+	overflow:hidden;
+	background: transparent;
+	border: none;
+	padding: 0px 5px;
+	height: 15px;
+	font-size: 11px;
+	text-align: left;
+	white-space:nowrap;
+	line-height: 14px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+#link6:focus {
+    outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);    
+    -webkit-user-modify: read-write-plaintext-only;
+}
+.shr-inp ,#text-copied{
+	position: absolute;
+	top: 9px;
+	left: 111px;
+	border: 1px solid #afb1b2;
+	height: 20px;
+	background: #f9f9f9;
+	line-height: 16px;
+	border-radius: 0px 3px 3px 0px;
+}
+#text-copied { 
+	background: none repeat scroll 0 0 #0B0C0D;
+    border: 1px solid #0B0C0D;
+    border-radius: 0 2px 2px 0;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: 18px;
+    opacity: 0.95;
+    text-align: left;
+    text-indent: 10px;
+    width: 590px;
+	display: none;
+}
+.shr-link, .oth-links {
+	padding: 0px;
+	height: 20px;
+	line-height: 19px;
+	width: 100px;
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	-moz-user-select: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#EEEEEE, #DDDDDD);
+    background-repeat: repeat-x;
+    border: 1px solid #afb1b2;
+    border-radius: 3px 0px 0px 3px;
+    color: #333333;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.shr-link.zeroclipboard-is-hover,.player-options > div:hover {
+    background-color: #cccccc;
+    background-image: linear-gradient(#dfdfdf, #cccccc);
+    background-repeat: repeat-x;
+    border: 1px solid #afb1b2;
+}
+.oth-links {
+	background-color: #679137;
+    background-image: linear-gradient(#82B24B, #679137);
+    background-repeat: repeat-x;
+    border-color: #679137;
+    border-radius: 3px;
+    color: #111111;
+    left: 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.2);
+    top: 9px;
+    width: 80px;
+}
+.oth-links:hover {
+	background-color: #5f8633;
+    background-image: linear-gradient(#79a646, #5f8633);
+    background-repeat: repeat-x;
+    border-color: #5f8633;
+}
+.c-footer .stat-box {
+	height: 40px;
+}
+#spell-c .grid-50 {
+	height: 28px;
+	line-height: 28px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.spell-header {
+	background:  url(../imgs/header-sprite.png) -135px -114px no-repeat;
+	height: 28px;
+	width: 245px
+}
+.no-click { cursor: default; }
+.relati { position: relative; line-height: 0px; }
+.stat-icons, .path-icons, .upgrade-icons {
+	width: 20px;
+	height: 20px;
+	background-image: url(../imgs/icons/stat-icons.png);
+	background-repeat: no-repeat;
+	margin: -4px 0px 0px;
+	border-radius: 3px;
+}
+.stat-icons.slv {
+	background-position: 0px 0px;
+}
+.stat-icons.vig {
+	background-position: -40px 0px;
+}
+.stat-icons.end {
+	background-position: -60px 0px;
+}
+.stat-icons.vit {
+	background-position: -80px 0px;
+}
+.stat-icons.att {
+	background-position: -100px 0px;
+}
+.stat-icons.str {
+	background-position: -120px 0px;
+}
+.stat-icons.dex {
+	background-position: -140px 0px;
+}
+.stat-icons.adp {
+	background-position: -160px 0px;
+}
+.stat-icons.nnt {
+	background-position: -180px 0px;
+}
+.stat-icons.fai {
+	background-position: -200px 0px;
+}
+.stat-icons.cls {
+	background-position: -898px 0px;
+}
+.stat-icons.cov {
+	background-position: -580px 0px;
+}
+
+.stat-icons.arm {
+	background-position: -620px 0px;
+}
+.stat-icons.rin {
+	background-position: -640px 0px;
+}
+
+.stat-icons.hp {
+	background-position: -240px 0px;
+}
+.stat-icons.stam {
+	background-position: -260px 0px;
+}
+.stat-icons.eqp {
+	background-position: -220px 0px;
+}
+
+.stat-icons.def {
+	background-position: -500px 0px;
+}
+.stat-icons.sti {
+	background-position: -520px 0px;
+}
+.stat-icons.sla {
+	background-position: -540px 0px;
+}
+.stat-icons.pie {
+	background-position: -560px 0px;
+}
+.stat-icons.mag {
+	background-position: -580px 0px;
+}
+.stat-icons.fla {
+	background-position: -600px 0px;
+}
+.stat-icons.lig {
+	background-position: -620px 0px;
+}
+.stat-icons.dar {
+	background-position: -640px 0px;
+}
+
+.stat-icons.poise {
+	background-position: -760px 0px;
+}
+.stat-icons.poison {
+	background-position: -660px 0px;
+}
+.stat-icons.bleed {
+	background-position: -680px 0px;
+}
+.stat-icons.petrify {
+	background-position: -700px 0px;
+}
+.stat-icons.curse {
+	background-position: -720px 0px;
+}
+.stat-icons.item {
+	background-position: -540px 0px;
+}
+.stat-icons.slots {
+	background-position: -780px 0px;
+}
+
+.stat-icons.casts {
+	background-position: -320px 0px;
+}
+.stat-icons.agility {
+	background-position: -740px 0px;
+}
+.stat-icons.atkstr {
+	background-position: -340px 0px;
+}
+.stat-icons.atkdex {
+	background-position: -360px 0px;
+}
+.stat-icons.magicbns {
+	background-position: -380px 0px;
+}
+.stat-icons.firebns {
+	background-position: -400px 0px;
+}
+.stat-icons.ligbns {
+	background-position: -420px 0px;
+}
+.stat-icons.darbns {
+	background-position: -440px 0px;
+}
+.stat-icons.poisonbns {
+	background-position: -460px 0px;
+}
+.stat-icons.bleedbns {
+	background-position: -480px 0px;
+}
+
+
+
+.stat-icons.lh1, .stat-icons.lh2, .stat-icons.lh3 {
+	background-position: -680px 0px;
+}
+.stat-icons.rh1,.stat-icons.rh2,.stat-icons.rh3 {
+	background-position: -660px 0px;
+}
+
+.path-icons {
+	background-image: url(../imgs/icons/path-icons.png);
+	cursor: pointer;
+}
+.path-icons.nor {
+	background-position: 0px 0px;
+}
+.path-icons.raw {
+	background-position: -20px 0px;
+}
+.path-icons.cry {
+	background-position: -40px 0px;
+}
+.path-icons.lig {
+	background-position: -60px 0px;
+}
+.path-icons.mag {
+	background-position: -80px 0px;
+}
+.path-icons.enc {
+	background-position: -100px 0px;
+}
+.path-icons.div {
+	background-position: -120px 0px;
+}
+.path-icons.occ {
+	background-position: -140px 0px;
+}
+.path-icons.fir {
+	background-position: -160px 0px;
+}
+.path-icons.cha {
+	background-position: -116px 0px;
+}
+.path-icons.dem {
+	background-position: -140px 0px;
+}
+
+.upgrade-icons {
+	background-image: url(../imgs/icons/upgrade-icons.png);
+	cursor: pointer;
+}
+.upgrade-icons.float-right{
+	margin-top:3px;
+}
+.upgrade-icons.u0 {
+	background-position: 0px 0px;
+}
+.upgrade-icons.u1 {
+	background-position: -24px 0px;
+}
+.upgrade-icons.u2 {
+	background-position: -48px 0px;
+}
+.upgrade-icons.u3 {
+	background-position: -72px 0px;
+}
+.upgrade-icons.u4 {
+	background-position: -96px 0px;
+}
+.upgrade-icons.u5 {
+	background-position: -120px 0px;
+}
+.upgrade-icons.u6 {
+	background-position: -144px 0px;
+}
+.upgrade-icons.u7 {
+	background-position: -168px 0px;
+}
+.upgrade-icons.u8 {
+	background-position: -192px 0px;
+}
+.upgrade-icons.u9 {
+	background-position: -116px 0px;
+}
+.upgrade-icons.u10 {
+	background-position: -140px 0px;
+}
+
+.arrow {
+float: right;
+clear: none;
+width: 19px;
+height: 19px;
+background: transparent url(../imgs/icons/arrows.png) no-repeat;
+margin: 4px 0px 0px 6px;
+cursor:pointer;
+}
+.arrow.down {
+	background-position: -19px 0px;
+}
+.arrow.down:hover {
+	background-position: -19px -19px;
+}
+.arrow.up:hover {
+	background-position: 0px -19px;
+}
+
+.arrow.down:active {
+	background-position: -19px -38px;
+}
+.arrow.up:active {
+	background-position: 0px -38px;
+}
+.weapon-container .grid-50:nth-of-type(odd) {
+	padding-left: 0px;
+}
+.weapon-container .grid-50:nth-of-type(odd) .stat-icons {
+	margin-right: -4px;
+}
+.weapon-container .grid-50:nth-of-type(even) {
+	padding-right: 0px;
+	text-align:right;
+}
+.weapon-container .grid-50:nth-of-type(even) select {
+	direction: rtl;
+}
+.weapon-container select {
+	margin: 1px 0px 0px;
+	width: 100%;
+}
+.weapon-container img {
+	margin: -3px 0px 0px;
+}
+.weapon-container .stat-box {
+	height: auto;
+}
+
+.specail-icons {
+	background: url(../imgs/icons/special-icons.png) no-repeat;
+	width: 60px;
+	height: 23px;
+	border-radius: 3px;
+}
+.specail-icons.dh {
+	background-position: -60px -5px;
+}
+.specail-icons.db {
+	background-position: -120px -5px;
+}
+.specail-icons.eg {
+	background-position: 0px -5px;
+}
+
+.error-container {
+	 margin: 20px auto 0;
+	 padding: 20px;
+	 background: #D3D7DB;
+	 border-radius: 10px;
+}
+
+.status-icons{
+	width: 28px;
+	height: 28px;
+	background-image: url(../imgs/icons/status-icons.png);
+	background-repeat: no-repeat;
+	background-position: 29px;
+	margin: 0px 5px 0px 0px;
+}
+#status-effects-box {
+	height: 80px;
+	overflow-y: auto;
+	font-size: 12px;
+	text-align: left;
+}
+#status-effects-box li {
+	line-height: 12px;
+}
+#status-effects-box ul {
+	padding: 0px 0px 0px 7px;
+	margin: 5px 0px 0px 10px;
+}
+#status-effects-box li {
+	padding: 0px;
+	margin: 0px;
+}
+#csc,#tsc{margin-top: 3px;}
+
+
+.stat-icons,.player-options,.oth-links{}
+.weapon-container .stat-icons{ display: inline;}
+#ring1,#ring3 { margin-left: 0px; }
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after,.jscroll-added:before, .jscroll-added:after { content: ""; display: table; }
+.clearfix:after,.jscroll-added:after { clear: both; }
+.clearfix,.jscroll-added { zoom: 1; }
+.dblock{display:block;}
+.align-center { text-align: center; }
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.break-word { -ms-word-break: break-all;word-break: break-all;word-break: break-word;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto; }
+.float-left { float:left; }
+.float-right { float:right; }
+.green {color:#328e2b ;}
+.orange {color:#a55d28 ;}
+.defense-color{color:#8a5e3d;}
+.weight-color{color:#8a5e3d;}
+.magic-color{color:#2b7cb5;;}
+.fire-color{color:#b52b2b;}
+.light-color{color:#b59d2b;}
+.red {color:#b22222 ;}
+.deepred {color:#8e0707 ;}
+.shift-left { margin-right:15%;}
+.shift-left-10 {
+	margin-left: 10px;
+}
+.small {font-size: 90%;}
+.mini {font-size: 80%;}
+.faded {opacity:.8}
+.xfaded {opacity:.4;cursor:pointer;}
+.xfaded:hover,.xfaded.active {opacity:1}
+.black{ color: #111 !important; }
+
+
+#loader {
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	text-align:center;
+	color: #fff;
+	background: #000;
+	opacity: .8;
+	z-index: 100000;
+}
+#loader img {
+	width:128px;
+	height:128px;
+	margin-top:10%;
+}
+
+
+@media screen and (max-width: 767px) {
+	.mobile-grid-container {
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}	
+	.container {width: auto;min-width: 320px;}
+	.player-options{display:none;}
+	.shr-inp {display: none;}
+	#shr-link{float:none;clear:both;position: static;margin-top: 10px;width: 120px;border-radius: 3px;}
+	.relati{line-height:1px;}
+	#text-copied{
+		background: none repeat scroll 0 0 #0B0C0D;
+		border: 1px solid #0B0C0D;
+		border-radius: 2px;
+		color: #FFFFFF;
+		font-size: 11px;
+		line-height: 18px;
+		opacity: 0.95;
+		text-align: left;
+		text-indent: 10px;
+		width: 120px;
+		display: none;
+		left: 10px;
+		
+	}
+	.c-body {
+		background: #D3D7DB;
+		min-height: 300px;
+	}
+	.c-spells {
+		text-align: center;
+	}
+	select {
+		width: 180px;
+	}
+	
+}
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}

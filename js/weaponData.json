@@ -1,0 +1,22 @@
+[
+	{
+		"name" : "barefist",
+		"lname" : "Bare Fist",
+		"base" : {
+			"phy" : 0
+		},
+		"factors" : {
+			"str" : 0,
+			"dex" : 0
+		},
+		"effects" : [],
+		"weight" : 0,
+		"requirements" : {
+			"str" : 0,
+			"dex" : 0,
+			"nnt" : 0,
+			"fai" : 0
+		}
+	}
+]
+
