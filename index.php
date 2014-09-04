@@ -36,11 +36,6 @@
 	require_once('app/appCore.php');
 	
 	$app = new appCore;
-	
-	/*appCore::$db = array("host" => 'localhost',
-						"user" => 'sarusagi',
-						"pass" => 'fjSRN3JDwRKr',
-						"name" => 'msclient_stoli');*/
 							
 	$r = new Router;
 	$filter =  Array('/.php/');
